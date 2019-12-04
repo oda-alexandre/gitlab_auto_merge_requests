@@ -18,11 +18,11 @@
 
 ## INTRODUCTION
 
-This repository contains an automated build of ISO gitlab_auto_merge_requests, an OS built from Arc Linux Base Image and built with docker applications
+With this script, every time we push a commit, GitLab CI checks if the branch that commit belongs to already has an open merge request and, if not, it creates it. It then assigns the merge request to you and select merge when pipeline succeeds.
 
 Docker image of :
 
-- [gitlab_auto_merge_requests](https://gitlab.com/oda-alexandre/gitlab_auto_merge_requests)
+- [gitlab_auto_merge_requests](https://github.com/oda-alexandre/gitlab_auto_merge_requests)
 
 Continuous integration on :
 
@@ -72,11 +72,13 @@ Automatically updated on :
 
 ### Options
 
-```
---open: open a merge request
---enable: enable merge_when_pipeline_succeeds
---help: show this help
-```
+> Usage : auto_merge_requests.sh [commande]
+
+COMMANDE            | DESCRIPTION
+--------------------|----------------------------------------------------------
+--open              | open a merge request
+--enable            | enable merge_when_pipeline_succeeds
+--help              | show this help
 
 ### Add stages for auto merge requests
 
