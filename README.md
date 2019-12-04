@@ -89,7 +89,7 @@ stages:
   - staging
   - deploy
 
-staging:
+open_merge:
   stage: staging
   allow_failure: false
   script:
@@ -104,7 +104,7 @@ staging:
   only: 
     - dev
 
-deploy:
+enable_merge:
   stage: deploy
   allow_failure: false
   script:

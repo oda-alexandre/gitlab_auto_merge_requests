@@ -113,7 +113,7 @@ license_management:
   only:
     - dev
 
-test:
+test_run:
   stage: test
   allow_failure: false
   script:
@@ -159,6 +159,6 @@ deploy:
   stage: deploy
   allow_failure: false
   script:
-    - echo -e '\033[36;1m ******* DEPLOYMENT FINISHED ******** \033[0m'
+    - echo -e '\033[36;1m ******* DEPLOYMENT FINISHED SUCCESSFULLY ******** \033[0m'
   only: 
     - master
