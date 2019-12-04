@@ -21,6 +21,7 @@ case $1 in
             -H "Content-Type: application/json";
         ;;
     *)
+        # Help menu
         echo "$0 arguments :"
         echo "  --open: open a merge request"
         echo "  --enable: enable merge_when_pipeline_succeeds"
