@@ -2,7 +2,7 @@ FROM alpine
 
 LABEL authors="https://www.oda-alexandre.com/"
 
-RUN echo -e '\033[36;1m ******* INSTALL PREREQUISITES ******** \033[0m'; \
+RUN echo -e '\033[36;1m ******* INSTALL PREREQUISITES ******** \033[0m' && \
   apk add curl bash
 
 RUN echo -e '\033[36;1m ******* ADD SCRIPT ******** \033[0m'
