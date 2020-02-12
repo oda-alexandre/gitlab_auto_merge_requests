@@ -1,5 +1,7 @@
 # GITLAB AUTO MERGE REQUEST
 
+<img src="https://assets.gitlab-static.net/uploads/-/system/project/avatar/15684701/Octicons-git-pull-request.svg.png" width="200" height="200"/>
+
 
 ## INDEX
 
