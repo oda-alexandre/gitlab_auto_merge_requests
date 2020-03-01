@@ -7,6 +7,7 @@
 
   - [INDEX](#index)
   - [BADGES](#badges)
+  - [FIRST UPDATE](#first-update)
   - [INTRODUCTION](#introduction)
   - [PREREQUISITES](#prerequisites)
   - [USE](#use)
@@ -120,6 +121,31 @@ enable_merge:
         bash auto_merge_requests.sh --enable
   only: 
     - merge_requests
+```
+
+### If you add Schedules without change in the project
+
+Paste this on your ```README.md``` :
+
+## FIRST UPDATE
+
+Date: 01-01-01
+
+
+And paste this on your ```gitlab-ci.yml``` :
+
+```yml
+stages:
+  - date
+
+date:
+  stage: date
+  allow_failure: false
+  script:
+    - echo -e '\033[36;1m ******* DATE ******** \033[0m'
+    - "date=$(date +\"%Y-%m-%d\") && sed -i \"s/^Date: .*/Date: $date/\" README.md"
+  only:
+    - dev
 ```
 
 ## LICENSE
