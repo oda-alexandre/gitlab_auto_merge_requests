@@ -5,18 +5,31 @@
 
 ## INDEX
 
+- [GITLAB AUTO MERGE REQUEST](#gitlab-auto-merge-request)
   - [INDEX](#index)
   - [BADGES](#badges)
   - [FIRST UPDATE](#first-update)
   - [INTRODUCTION](#introduction)
   - [PREREQUISITES](#prerequisites)
+    - [1. Use gitlab-ci](#1-use-gitlab-ci)
+    - [2. Allow merge requests to be merged if the pipeline succeeds](#2-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds)
+    - [3. Create a personal access token](#3-create-a-personal-access-token)
+    - [4. Create a variable for your token to your project’s Settings](#4-create-a-variable-for-your-token-to-your-projects-settings)
   - [USE](#use)
+    - [Options](#options)
+    - [Add stages for auto merge requests](#add-stages-for-auto-merge-requests)
+    - [If you add Schedules without change in the project](#if-you-add-schedules-without-change-in-the-project)
   - [LICENSE](#license)
 
 
 ## BADGES
 
 [![pipeline status](https://gitlab.com/oda-alexandre/gitlab_auto_merge_requests/badges/master/pipeline.svg)](https://gitlab.com/oda-alexandre/gitlab_auto_merge_requests/commits/master)
+
+
+## FIRST UPDATE
+
+Date: 01-01-01
 
 
 ## INTRODUCTION
@@ -127,7 +140,7 @@ enable_merge:
 
 Paste this on your ```README.md``` :
 
-## FIRST UPDATE
+FIRST UPDATE
 
 Date: 01-01-01
 
