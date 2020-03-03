@@ -3,7 +3,7 @@ FROM alpine
 LABEL authors="https://www.oda-alexandre.com/"
 
 RUN echo -e '\033[36;1m ******* INSTALL PREREQUISITES ******** \033[0m' && \
-  apk add curl bash
+  apk add --no-cache curl bash
 
 RUN echo -e '\033[36;1m ******* ADD SCRIPT ******** \033[0m'
 COPY ./auto_merge_requests.sh  /root/auto_merge_requests.sh
