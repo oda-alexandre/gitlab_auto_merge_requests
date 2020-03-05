@@ -33,7 +33,7 @@ Docker image of :
 
 Continuous integration on :
 
-- [gitlab](https://gitlab.com/oda-alexandre/gitlab_auto_merge_requests/pipelines)
+- [gitlab pipelines](https://gitlab.com/oda-alexandre/gitlab_auto_merge_requests/pipelines)
 
 Automatically updated on :
 
